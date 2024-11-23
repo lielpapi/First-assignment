@@ -1,0 +1,16 @@
+
+###
+
+GET http://localhost:3000/posts?owner=1
+
+###
+
+POST http://localhost:3000/posts // Content-Type: application/json
+
+{
+    "title": "Post 1",
+    "content": "Content 1"
+}
+
+###
+
