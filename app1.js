@@ -3,7 +3,8 @@ const app = express();
 const dotenv = require("dotenv").config();
 const port = 3000; 
 
-
+// app.use(express.json());
+// app.use(express.json());
 
 app.get("/", (req, res ) => { 
     res.send('liel');
@@ -21,9 +22,6 @@ res.send('create new post');
 app.put("/posts/:id", (req, res ) => {
 res.send('update post');
 });
-
-
-
 
 
 app.listen(port, ()=> {
